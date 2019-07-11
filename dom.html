@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+</head>
+
+<body>
+  账号：<input type="text" id="id" placeholder="请输入您的账号" />
+  密码：<input type="password" id="password" placeholder="请输入您的密码" />
+  <input type="button" value="登录" onclick="Calc()" />
+  <script>
+    function Calc() {
+      var x = document.getElementById("id").value;
+      var y = document.getElementById("password").value;
+      if (x == null) {
+        alert("your account is null");
+      }
+      else {
+        if (x != 123) {
+          alert("your account is wrong");
+          }
+          if (y != 123) {
+            alert("your password is wrong");
+          }
+          else {
+            alert("login sucess");
+          }
+        }
+      }
+  </script>
+</body>
+
+</html>
